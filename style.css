@@ -1,5 +1,11 @@
+*{
+	margin:0px;
+	padding:0px;
+}
 body{
 	background-color:#f7f9f9;
+	margin-left:250px;
+	margin-top:20px;
 }
 #container ul{
 	list-style:none;
@@ -14,5 +20,21 @@ body{
 	text-align:center;
 	float:left;
 	color:white;
-	
+	font-size:19px;
+	position:relative;
+}
+#container ul li:hover{
+	background-color:#green;
+}
+#container ul ul {
+	display:none;
+}
+#container ul li:hover >ul{
+	display:block;
+}
+#container ul ul ul{
+	margin-left:150px;
+	top:0px;
+	padding:0px;
+	position:absolute;
 }
